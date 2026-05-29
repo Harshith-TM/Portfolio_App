@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">Portfolio</string>
+
+    <!--Bottom Navigation-->
+    <string name="SectionHome">Home</string>
+    <string name="SectionProjects">Projects</string>
+    <string name="SectionSkills">Skills</string>
+    <string name="SectionExperience">Experience</string>
+    <string name="SectionContact">Contact</string>
+
+    <!--Hero Section-->
+    <string name="Hi">Hi, I\'m</string>
+    <string name="Title">Android\nDeveloper</string>
+    <string name="Description">I build modern, clean and efficient\nAndroid apps that solve real problems.</string>
+    <string name="Explore">Explore My Work</string>
+
+    <!--Home Section-->
+    <string name="Label_About_Me">About Me</string>
+    <string name="About">I’m an aspiring Android Developer passionate about building useful and  user-friendly mobile applications. I enjoy turning ideas into real products and constantly learning new technologies. </string>
+    <string name="What_I_Do">What I Do</string>
+    <string name="Android_App_Dev">Android App Development\nBuilding native Android apps\nwith modern tools.</string>
+    <string name="Clean_Code">Clean &amp; Maintainable Code\nWriting efficient, scalable and\neasy-to-maintain code.</string>
+    <string name="Problem_Solving">Problem Solving\nSolving real-world problems\nwith creative solutions.</string>
+    <string name="Clean_UI">Clean\nUI Focus</string>
+    <string name="Android_Enthusiast">Android\nEnthusiast</string>
+    <string name="Always_Learning">Always\nLearning</string>
+
+    <!--Project Section-->
+    <string name="Label_My_Projects">My Projects</string>
+    <string name="Know_More">Know More</string>
+    <string name="Project_Title1">Transport Buddy</string>
+    <string name="Project_Desc1">Digital ticket booking for bus, train and metro transportation services.</string>
+    <string name="Project_Title2">Ghost Vault</string>
+    <string name="Project_Desc2">Password generation, storage and management with Firebase integration.</string>
+    <string name="Project_Title3">Chess Timer</string>
+    <string name="Project_Desc3">Two player countdown timer built for competitive chess games.</string>
+
+    <!--Project Details-->
+    <string name="Tech_Stack">Tech Stack</string>
+    <string name="Project1_Name">Transport Buddy</string>
+    <string name="Project1_Overview">
+        A real-time travel ticket booking app for BMTC, Metro and Train services,
+        with responsive UI for smooth ticket booking and travel management.
+        Integrated with Firebase authentication for User authentication and
+        realtime database for secure storage and real-time data.
+        Future features include cab, bike, auto and airport taxi services.
+    </string>
+    <string name="Project1_Learnings">
+        &#8226; UI/UX Designing\n
+        &#8226; Glide and Cloudinary\n
+        &#8226; Firebase integration\n
+        &#8226; Maintaining consistent UI\n
+        &#8226; Real-time database handling\n
+        &#8226; Linear and Constraint Layouts\n
+        &#8226; Android Fragments and Intents\n
+    </string>
+    <string name="Project2_Name">Password Manager</string>
+    <string name="Project2_Overview">
+        A secure password manager mobile app built using XML, Java and Firebase,
+        featuring responsive UI for easy password management and quick access.
+        Integrated with Firebase authentication for secure login and Realtime data
+        for encrypted password storage and synchronization across devices.
+        Future features include biometric login and password strength analysis.
+    </string>
+    <string name="Project2_Learnings">
+        &#8226; Firebase integration\n
+        &#8226; Password generator logic\n
+        &#8226; Manage stored passwords\n
+        &#8226; Real-time database handling\n
+        &#8226; Android Fragments and Intents\n
+        &#8226; Copying passwords to clipboard\n
+        &#8226; Password encryption and decryption algorithm\n
+    </string>
+    <string name="Project3_Name">Chess Timer</string>
+    <string name="Project3_Overview">
+        A dual chess timer mobile app built using XML and Kotlin, featuring
+        responsive UI for smooth gameplay and time management. Supports three
+        timer modes: Classic, Bronstein and Fischer, with accurate countdown and
+        increment handling for competitive matches. Future feature includes home
+        screen widgets for quick access and real-time tracking.
+    </string>
+    <string name="Project3_Learnings">
+        &#8226; Motion Layout\n
+        &#8226; Dual Timer logic\n
+        &#8226; Responsive UI Design\n
+        &#8226; Maintaining consistent UI\n
+        &#8226; Linear and Constraint Layouts\n
+        &#8226; Play, Pause Stop States Management\n
+    </string>
+    <string name="Project_Image">project_image</string>
+    <string name="Demo_Clip">Demo Clip</string>
+    <string name="Project_Overview">Project Overview</string>
+    <string name="Key_Learnings">Key Learnings</string>
+
+    <!--Skills Section-->
+    <string name="Label_Skills">Skills</string>
+    <string name="My_Skills">My Skills</string>
+    <string name="Tech_n_Tools">Technologies and tools I\'m learning and working with.</string>
+    <string name="Java">Java</string>
+    <string name="Kotlin">Kotlin</string>
+    <string name="XML">XML</string>
+    <string name="MVVM">MVVM</string>
+    <string name="Room">Room DB</string>
+    <string name="Git">Git</string>
+    <string name="Github">Github</string>
+    <string name="SQL">SQL</string>
+    <string name="SQLite">SQLite</string>
+    <string name="Firebase">Firebase</string>
+    <string name="Android_SDK">Android SDK</string>
+    <string name="Gradle">Gradle</string>
+    <string name="Figma">Figma</string>
+    <string name="Beginner">Beginner</string>
+    <string name="Proficient">Proficient</string>
+    <string name="Additionally">Additionally</string>
+
+    <!--Experience Section-->
+    <string name="Label_Experience">Experience</string>
+    <string name="Fresher">Fresher</string>
+    <string name="Overview">I\'m excited to start my professional journey and contribute to impactful projects and continuing to learn and grow.</string>
+    <string name="WorkingOn">What I\'m working on</string>
+    <string name="WorkingOn1">Building real-world Android projects.</string>
+    <string name="WorkingOn2">Improving Data Structures and Algorithms.</string>
+    <string name="WorkingOn3">Exploring System Design and Design System basics.</string>
+    <string name="WorkingOn4">Fundamentals of Kotlin, Android, UI/UX.</string>
+
+    <!--Contact Section-->
+    <string name="Label_GetInTouch">Get In Touch</string>
+    <string name="Contact_Subtitle">Got an idea or just want to say hi? Let\'s Connect :)</string>
+    <string name="Email">Email</string>
+    <string name="Email_Id">mail-id@gmail.com</string>
+    <string name="Phone">Phone</string>
+    <string name="Phone_Number">+91 0123456789</string>
+    <string name="Location">Location</string>
+    <string name="Place">Bengaluru,Karnataka</string>
+    <string name="GitHub_Url">github.com/Harshith-TM</string>
+    <string name="LinkedIn">LinkedIn</string>
+    <string name="LinkedIn_Url">linkedin.com/in/Harshith-TM</string>
+
+    <!--Others-->
+    <string name="icons">Icons</string>
+</resources>

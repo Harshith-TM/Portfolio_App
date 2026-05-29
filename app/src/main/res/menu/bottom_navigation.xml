@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/SectionHome"
+        android:icon="@drawable/icon_home"
+        android:title="@string/SectionHome" />
+    <item
+        android:id="@+id/SectionProjects"
+        android:icon="@drawable/icon_projects"
+        android:title="@string/SectionProjects" />
+    <item
+        android:id="@+id/SectionSkills"
+        android:icon="@drawable/icon_skills"
+        android:title="@string/SectionSkills" />
+    <item
+        android:id="@+id/SectionExperience"
+        android:icon="@drawable/icon_experience"
+        android:title="@string/SectionExperience" />
+    <item
+        android:id="@+id/SectionContact"
+        android:icon="@drawable/icon_contact"
+        android:title="@string/SectionContact" />
+</menu>

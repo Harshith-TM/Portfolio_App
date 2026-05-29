@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/night">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <TextView
+        android:id="@+id/label_projects"
+        style="@style/Custom_Label_Text"
+        android:text="@string/Label_My_Projects"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/project_card1"
+        style="@style/Custom_Card_View"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/label_projects"
+        app:layout_constraintWidth_max="600dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/icon_project1"
+                style="@style/Custom_Project_Icon"
+                android:contentDescription="@string/icons"
+                android:src="@drawable/project_icon1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/project_description1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/project_title1"
+                style="@style/Custom_Project_Title"
+                android:text="@string/Project_Title1"
+                app:layout_constraintStart_toStartOf="@+id/project_description1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/project_description1"
+                style="@style/Custom_Project_Description"
+                android:text="@string/Project_Desc1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/icon_project1"
+                app:layout_constraintTop_toBottomOf="@id/project_title1" />
+
+            <Button
+                android:id="@+id/know_more1"
+                tools:ignore="DuplicateSpeakableTextCheck"
+                style="@style/Custom_Details_Button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/project_description1"
+                app:layout_constraintTop_toBottomOf="@id/project_description1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/project_card2"
+        style="@style/Custom_Card_View"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/project_card1"
+        app:layout_constraintWidth_max="600dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/icon_project2"
+                style="@style/Custom_Project_Icon"
+                android:contentDescription="@string/icons"
+                android:src="@drawable/project_icon2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/project_description2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/project_title2"
+                style="@style/Custom_Project_Title"
+                android:text="@string/Project_Title2"
+                app:layout_constraintStart_toStartOf="@+id/project_description2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/project_description2"
+                style="@style/Custom_Project_Description"
+                android:text="@string/Project_Desc2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/icon_project2"
+                app:layout_constraintTop_toBottomOf="@id/project_title2" />
+
+            <Button
+                android:id="@+id/know_more2"
+                style="@style/Custom_Details_Button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/project_description2"
+                app:layout_constraintTop_toBottomOf="@id/project_description2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/project_card3"
+        style="@style/Custom_Card_View"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/project_card2"
+        app:layout_constraintWidth_max="600dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/icon_project3"
+                style="@style/Custom_Project_Icon"
+                android:contentDescription="@string/icons"
+                android:src="@drawable/project_icon3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/project_description3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/project_title3"
+                style="@style/Custom_Project_Title"
+                android:text="@string/Project_Title3"
+                app:layout_constraintStart_toStartOf="@+id/project_description3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/project_description3"
+                style="@style/Custom_Project_Description"
+                android:text="@string/Project_Desc3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/icon_project3"
+                app:layout_constraintTop_toBottomOf="@id/project_title3" />
+
+            <Button
+                android:id="@+id/know_more3"
+                style="@style/Custom_Details_Button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/project_description3"
+                app:layout_constraintTop_toBottomOf="@id/project_description3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

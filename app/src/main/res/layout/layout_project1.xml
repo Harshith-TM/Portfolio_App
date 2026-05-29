@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <TextView
+            android:id="@+id/project1_name"
+            style="@style/Custom_Label_Text"
+            android:text="@string/Project1_Name"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/project1_image"
+            style="@style/Project_Image"
+            android:contentDescription="@string/Project_Image"
+            android:src="@drawable/project1_image"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/project1_name" />
+
+        <TextView
+            android:id="@+id/tech_stack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/Tech_Stack"
+            android:textAlignment="center"
+            android:textColor="@color/text_color2"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/project1_image"
+            app:layout_constraintWidth_max="600dp" />
+
+        <LinearLayout
+            android:id="@+id/tech_stack_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/tech_stack"
+            app:layout_constraintWidth_max="600dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/icons"
+                android:src="@drawable/icon_xml" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/icons"
+                android:src="@drawable/icon_java" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/icons"
+                android:src="@drawable/icon_firebase" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/overview_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/tech_stack_container"
+            app:layout_constraintWidth_max="600dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/Project_Overview"
+                android:textColor="@color/text_color2"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat"
+                android:justificationMode="inter_character"
+                android:lineSpacingExtra="6dp"
+                android:text="@string/Project1_Overview"
+                android:textColor="@color/text_color1"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/Key_Learnings"
+                android:textColor="@color/text_color2"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="6dp"
+                android:text="@string/Project1_Learnings"
+                android:textColor="@color/text_color1"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/project1_github_repo"
+            style="@style/Github_Repo_Button"
+            android:text="@string/Github"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/project1_video_preview"
+            app:layout_constraintStart_toStartOf="@id/overview_container"
+            app:layout_constraintTop_toBottomOf="@id/overview_container" />
+
+        <Button
+            android:id="@+id/project1_video_preview"
+            style="@style/Demo_Clip_Button"
+            android:text="@string/Demo_Clip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/overview_container"
+            app:layout_constraintStart_toEndOf="@id/project1_github_repo"
+            app:layout_constraintTop_toBottomOf="@id/overview_container" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

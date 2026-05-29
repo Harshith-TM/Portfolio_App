@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="orange">#FF7F50</color>
+    <color name="grey">#808080</color>
+    <color name="transparent">#00000000</color>
+    <color name="night">#000F08</color>
+    <color name="night_shade1">#0A1912</color>
+    <color name="kiwi">#89E900</color>
+
+    <color name="icon">@color/kiwi</color>
+    <color name="icon_background">@color/transparent</color>
+    <color name="card_background">@color/night_shade1</color>
+    <color name="nav_bar">@color/night_shade1</color>
+    <color name="text_color1">@color/white</color>
+    <color name="text_color2">@color/kiwi</color>
+    <color name="button">@color/kiwi</color>
+    <color name="button_text">@color/night</color>
+    <color name="divider">@color/white_50</color>
+
+</resources>

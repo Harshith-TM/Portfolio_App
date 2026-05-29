@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_section_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <TextView
+        android:id="@+id/label_experience"
+        style="@style/Custom_Label_Text"
+        android:text="@string/Label_Experience"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/icons"
+        android:src="@drawable/icon_experience1"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/label_experience" />
+
+    <TextView
+        android:id="@+id/exp_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/text_color2"
+        android:textSize="20sp"
+        android:text="@string/Fresher"
+        app:layout_constraintWidth_max="600dp"
+        app:layout_constraintEnd_toEndOf="@+id/icon_experience"
+        app:layout_constraintStart_toStartOf="@+id/icon_experience"
+        app:layout_constraintTop_toBottomOf="@id/icon_experience" />
+
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/text_color1"
+        android:textSize="18sp"
+        android:text="@string/Overview"
+        android:textAlignment="center"
+        app:layout_constraintWidth_max="600dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/exp_level" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_divider"
+        app:layout_constraintWidth_max="600dp"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/overview"/>
+
+    <LinearLayout
+        android:id="@+id/work_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintWidth_max="600dp"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/divider">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/text_color2"
+            android:textSize="18sp"
+            android:text="@string/WorkingOn" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/text_color1"
+            android:textSize="18sp"
+            android:text="@string/WorkingOn1"
+            android:drawablePadding="15dp"
+            app:drawableStartCompat="@drawable/icon_check" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/text_color1"
+            android:textSize="18sp"
+            android:text="@string/WorkingOn2"
+            android:drawablePadding="15dp"
+            app:drawableStartCompat="@drawable/icon_check" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/text_color1"
+            android:textSize="18sp"
+            android:text="@string/WorkingOn3"
+            android:drawablePadding="15dp"
+            app:drawableStartCompat="@drawable/icon_check" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/text_color1"
+            android:textSize="18sp"
+            android:text="@string/WorkingOn4"
+            android:drawablePadding="15dp"
+            app:drawableStartCompat="@drawable/icon_check" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

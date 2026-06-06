@@ -32,9 +32,12 @@ public class TextCustomization {
 
         textView.setText(spannableString);
     }
-    public void TitleTextColor(TextView textView){
-        text = textView.getText().toString();
+    public SpannableString TitleTextColor(String textView){
+        text = textView;
         parts = text.split("\n", 2);
+        if (parts.length<2){
+            return new SpannableString(text);
+        }
         top = parts[0];
         bottom = parts[1];
         finalText = top + "\n" + bottom;
@@ -42,7 +45,7 @@ public class TextCustomization {
 
         spannableString.setSpan(new ForegroundColorSpan(Color.parseColor("#FFFFFF")), top.length() + 1, finalText.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 
-        textView.setText(spannableString);
+        return spannableString;
     }
     public void LabelUnderLine(TextView textView){
         SpannableString labelString = new SpannableString(textView.getText().toString());

@@ -23,6 +23,7 @@ public class RecyclerViewHolders {
     static class HeroViewHolder extends RecyclerView.ViewHolder {
         TextView title;
         Button know_more;
+        AutoTypingText autoTypingText = new AutoTypingText();
 
         public HeroViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -31,7 +32,7 @@ public class RecyclerViewHolders {
         }
 
         void bind() {
-            textCustomization.TitleTextColor(title);
+            autoTypingText.TypingAnimation(title);
             know_more.setOnClickListener(view -> {
                 RecyclerScroller recyclerScroller = new RecyclerScroller(itemView.getContext());
                 RecyclerView recyclerView = (RecyclerView) itemView.getParent();

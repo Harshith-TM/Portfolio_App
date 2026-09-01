@@ -60,3 +60,11 @@ While building this project, I gained practical experience with:
 ![Project ScreenShot1](ProjectScreenShots/Project_Screenshot2.png)
 
 ---
+
+<div align="center">
+  
+![Project Status](https://img.shields.io/badge/Stauts-Completed-66ff00?style=for-the-badge)
+
+</div>
+
+---
